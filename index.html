@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just for You ❤</title>
+
+  <!-- Google fonts for classy vibes -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --pink1: #ff9a9e;
+      --pink2: #fad0c4;
+      --pink3: #ffe1e7;
+      --accent: #ff568c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, var(--pink1), var(--pink2), var(--pink3));
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+      font-weight: 400;
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 { font-size: 4rem; margin-top: 2rem; }
+    h2 { font-size: 2.6rem; }
+
+    p.tagline {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #622;
+    }
+
+    .section {
+      width: min(90%, 900px);
+      margin: 3rem auto;
+      background: rgba(255,255,255,0.8);
+      padding: 2rem 2.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .reasons ul {
+      list-style: disc;
+      padding-left: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .memory-lane {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .memory-card {
+      text-align: center;
+    }
+
+    .memory-card img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform .3s ease;
+    }
+
+    .memory-card img:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+
+    .memory-card p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    .cta button {
+      font-size: 1.2rem;
+      background: var(--accent);
+      border: none;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: background .3s ease;
+    }
+
+    .cta button:hover { background: #ff346f; }
+    footer {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      color: #622;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Brieana</h1>
+  <p class="tagline">You're beautiful inside and outside</p>
+
+  <!-- Reasons section -->
+  <section class="section reasons">
+    <h2>4 reasons to say Yes to what i am going to propose</h2>
+    <ul>
+      <li>Our first date felt like a 5‑K—quick, fun, over way too soon.</li>
+      <li>You make running look easy and vegan living look delicious.</li>
+      <li>Your smile lights up every trail, café, and living room you step into.</li>
+      <li>Missing our Saturday plan? That just means I owe you an epic do‑over.</li>
+    </ul>
+  </section>
+
+  <!-- Memory lane gallery -->
+  <section class="section">
+    <h2>Memory Lane</h2>
+
+    <div class="memory-lane">
+      <div class="memory-card">
+        <img src="img/img2.png" alt="Briena smiling in the sun">
+        <p>Sunny braids &amp; picnic vibes—pure  magic.</p>
+      </div>
+
+      <div class="memory-card">
+        <img src="img/img3.png" alt="Brieana mirror selfie">
+        <p>That casual mirror moment when you stole the whole show.</p>
+      </div>
+
+      <div class="memory-card">
+        <img src="img/img1.png" alt="Brieana chilling outside">
+        <p>Gold‑hour glow, tattoos telling stories, and a smile that sticks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call‑to‑action -->
+  <section class="section cta">
+    <h2>Second‑Date Redo?</h2>
+    <p>How about we do something today? something spontaneous like going on a drive and getting to know each other?</p>
+    <button onclick="window.location.href='mailto:shaunlewisf23@gmail.com?subject=Shaun%20youre%20%the%20Best&body=Let%27s%20lock%20it%20in%20🚀'">I'm in 💌</button>
+  </section>
+
+  <footer>
+    Built with way too much coffee &amp; one very happy heart — Shaun
+  </footer>
+
+</body>
+</html>
